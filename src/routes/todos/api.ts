@@ -2,7 +2,7 @@
 	This module is used by the /todos endpoint to
 	make calls to api.svelte.dev, which stores todos
 	for each user. The leading underscore indicates that this is
-	a private module, _not_ an endpoint — visiting /todos/_api
+	a private module, _not_ an endpoint — visiting /todos/api
 	will net you a 404 response.
 
 	(The data on the todo app will expire periodically; no
@@ -12,8 +12,7 @@
 const base = 'https://api.svelte.dev';
 
 export function api (method: string, resource: string, data?: Record<string, unknown>) {
-	console.log('_api(%s, %s)', method, resource)
-	method = method.toLocaleUpperCase()
+	console.log('api(%s, %s)', method, resource)
 	return fetch(`${base}/${resource}`, {
 		method,
 		headers: {

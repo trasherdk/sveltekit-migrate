@@ -6,15 +6,14 @@
 		"build": "vite build",
 		"package": "svelte-kit package",
 		"preview": "vite preview",
-		"check": "svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
 		"format": "prettier --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/adapter-node": "next",
-		"@sveltejs/kit": "1.0.0-next.405",
+		"@sveltejs/kit": "next",
 		"@types/cookie": "^0.5.1",
 		"@typescript-eslint/eslint-plugin": "^5.33.1",
 		"@typescript-eslint/parser": "^5.33.1",
@@ -28,11 +27,11 @@
 		"svelte-preprocess": "^4.10.7",
 		"tslib": "^2.4.0",
 		"typescript": "^4.7.4",
-		"vite": "3.0.8"
+		"vite": "^3.0.9"
 	},
 	"type": "module",
 	"dependencies": {
-		"@fontsource/fira-mono": "^4.5.0",
+		"@fontsource/fira-mono": "^4.5.9",
 		"cookie": "^0.5.0"
 	}
 }

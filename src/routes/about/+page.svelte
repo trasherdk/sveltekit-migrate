@@ -1,3 +1,4 @@
+<!--
 <script context="module">
 	throw new Error("@migration task: Check code was safely removed (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292722)");
 
@@ -15,7 +16,7 @@
 	// // it so that it gets served as a static asset in prod
 	// export const prerender = true;
 </script>
-
+-->
 <svelte:head>
 	<title>About</title>
 	<meta name="description" content="About this app" />
